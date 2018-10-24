@@ -1,0 +1,47 @@
+/* Univerzalni stilovi */
+body {
+  background-image: url("#");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Stilovi podataka vremenske prognoze */
+#box {
+  margin-top: 20vh;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  font-size: 3rem;
+}
+
+#degrees {
+  cursor: pointer;
+}
+
+.icons {
+  width: 5rem;
+}
+
+/*** Media queries ***/
+/** Smartphone **/
+@media only screen and (max-width: 576px) {
+  /* Stilovi podataka vremenske prognoze */
+  #box {
+    font-size: 2rem;
+  }
+
+  .icons {
+    width: 4rem;
+  }
+}
+
+/** Tablet **/
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  /* Stilovi podataka vremenske prognoze */
+  #box {
+    font-size: 2.5rem;
+  }
+
+  .icons {
+    width: 4.5rem;
+  }
+}
