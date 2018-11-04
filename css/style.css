@@ -1,47 +1,49 @@
-/* Univerzalni stilovi */
+/* Universal styles */
 body {
-  background-image: url("#");
-  background-attachment: fixed;
-  background-size: 100% 100%;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
 }
 
-/* Stilovi podataka vremenske prognoze */
+/* Weather data styles */
 #box {
-  margin-top: 20vh;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.75);
-  font-size: 3rem;
+    margin-top: 20vh;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 3rem;
+    cursor: default;
 }
 
 #degrees {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .icons {
-  width: 5rem;
+    width: 5rem;
 }
 
-/*** Media queries ***/
-/** Smartphone **/
+
+/** Media queries **/
+/* Smartphone styles */
 @media only screen and (max-width: 576px) {
-  /* Stilovi podataka vremenske prognoze */
-  #box {
-    font-size: 2rem;
-  }
+    /* Weather data styles */
+    #box {
+        font-size: 1.5rem;
+    }
 
-  .icons {
-    width: 4rem;
-  }
+    .icons {
+        width: 3rem;
+    }
 }
 
-/** Tablet **/
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  /* Stilovi podataka vremenske prognoze */
-  #box {
-    font-size: 2.5rem;
-  }
 
-  .icons {
-    width: 4.5rem;
-  }
+/* Tablet stlyes */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    /* Weather data styles */
+    #box {
+        font-size: 2rem;
+    }
+
+    .icons {
+        width: 4rem;
+    }
 }

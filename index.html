@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Local Weather</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon.ico -->
-    <link href="https://s3.amazonaws.com/freecodecamp/favicons/android-chrome-192x192.png" rel="shortcut icon" />
-    <!-- CSS i media queries -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-  </head>
-  <body class="container-fluid">
+    <head>
+        <title>Local Weather</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon.ico -->
+        <link href="https://s3.amazonaws.com/freecodecamp/favicons/android-chrome-192x192.png" rel="shortcut icon" />
+        <!-- CSS and media queries -->
+        <link href="css/style.css" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <body class="container-fluid">
+        <!-- Local weather data -->
+        <div class="row">
+            <div id="box" class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 text-center text-primary">
+                <!-- Place and country -->
+                <p><span id="place"></span><span id="country"></span></p>
+                <!-- Weather icon, temperature and weather info -->
+                <img src="#" alt="" id="weatherIcon" /><span id="temperature"></span><sup title="" id="degrees"></sup><span id="weatherInfo"></span>
+                <p>
+                    <!-- Humidity -->
+                    <img src="#" alt="" class="icons" id="humidityIcon" title="Humidity" /><span id="humidity"></span>
+                    <!-- Wind speed -->
+                    <img src="#" alt="" class="icons" id="windSpeedIcon" title="Wind speed" /><span id="windSpeed"></span>
+                </p>
+            </div>
+        </div>
 
-    <!-- Podaci vremenske prognoze -->
-    <div class="row">
-      <div id="box" class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 text-center text-primary">
-        <!-- Naziv mesta i zemlje -->
-        <p><span id="place"></span><span id="country"></span></p>
-        <!-- Ikonica vremena, temperatura i opis vremena -->
-        <img src="#" alt="" id="weatherIcon" /><span id="temperature"></span><sup title="" id="degrees"></sup><span id="weatherInfo"></span>
-        <!-- Vlažnost -->
-        <p><img src="#" alt="" class="icons" id="humidityIcon" /><span id="humidity"></span>
-          <!-- Brzina vetra -->
-          <img src="#" alt="" class="icons" id="windSpeedIcon" /><span id="windSpeed"></span></p>
-        <!-- Vazdušni pritisak -->
-        <p><img src="#" alt="" class="icons" id="pressureIcon" /><span id="pressure"></span></p>
-      </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
-  </body>
+        <!-- jQuery -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
 </html>
