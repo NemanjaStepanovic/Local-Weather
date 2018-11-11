@@ -22,25 +22,25 @@ $(document).ready(function() {
 
                 /* Logic for showing background image */
                 if(weatherDescription === "Clear") {
-                    $("body").css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/0/07/Clear_Sky.jpg)");
+                    $("body").css("background-image", "url(https://image.ibb.co/f4fV3V/Clear-Sky.jpg)");
                 }
                 else if(weatherDescription === "Fog") {
-                    $("body").css("background-image", "url(http://i.telegraph.co.uk/multimedia/archive/02061/leicester-park_2061557i.jpg)");
+                    $("body").css("background-image", "url(https://image.ibb.co/gcKUxq/leicester-park-2061557i.jpg)");
                 }
                 else if(weatherDescription === "Clouds") {
-                    $("body").css("background-image", "url(http://www.ethnotraveler.com/wp-content/uploads/2016/03/storm-clouds-426271_960_720.jpg)");
+                    $("body").css("background-image", "url(https://image.ibb.co/iW5PVA/storm-clouds-426271-960-720.jpg)");
                 }
                 else if(weatherDescription === "Rain") {
-                    $("body").css("background-image", "url(http://www.weatherwizkids.com/wp-content/uploads/2015/02/rain21.jpg)");
+                    $("body").css("background-image", "url(https://image.ibb.co/ctAPVA/rain21.jpg)");
                 }
                 else if(weatherDescription === "Snow") {
-                    $("body").css("background-image", "url(https://www.metoffice.gov.uk/binaries/content/gallery/mohippo/images/learning/learn-about-the-weather/snow/heavy-snow-in-the-uk.jpg)");
+                    $("body").css("background-image", "url(https://image.ibb.co/gzsciV/heavy-snow-in-the-uk.jpg)");
                 }
                 else if(weatherDescription === "Mist") {
-                    $("body").css("background-image", "url(https://www.muralswallpaper.com/app/uploads/amidst-the-mist-forest-plain.jpg)");
+                    $("body").css("background-image", "url(https://image.ibb.co/gxn4VA/amidst-the-mist-forest-plain.jpg)");
                 }
                 else if(weatherDescription === "Thunderstorm") {
-                    $("body").css("background-image", "url(https://accuweather.brightspotcdn.com/3b/34/285b347343c69a37f020db11fb51/lightning-getty.jpg)");
+                    $("body").css("background-image", "url(https://image.ibb.co/fTmL3V/lightning-getty.jpg)");
                 }
 
                 /* Placing data from the server */
@@ -55,9 +55,9 @@ $(document).ready(function() {
                 $("#temperature").html(" " + celsius);
                 $("#degrees").html("&#8451;|&#8457;").attr("title", "Switch to Fahrenheit");
                 $("#weatherInfo").html(" (" + weatherInfo + ")");
-                $("#humidityIcon").attr("src", "https://cdn.iconscout.com/public/images/icon/free/png-512/humidity-forecast-hydration-precipitation-temperature-weather-3a64e557720613a1-512x512.png").attr("alt", "Humidity icon");
+                $("#humidityIcon").attr("src", "https://image.ibb.co/fiQDOV/humidity-forecast-hydration-precipitation-temperature-weather-38924.png").attr("alt", "Humidity icon");
                 $("#humidity").html(humidity + "% ");
-                $("#windSpeedIcon").attr("src", "https://cdn2.iconfinder.com/data/icons/lovely-weather-icons/32/wind1-256.png").attr("alt", "Wind speed icon");
+                $("#windSpeedIcon").attr("src", "https://image.ibb.co/g8XhHq/wind1-256.png").attr("alt", "Wind speed icon");
                 $("#windSpeed").html(windSpeed + "m/s");
 
                 /* Switching between Celsius and Fahrenheit */
