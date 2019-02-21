@@ -1,2 +1,2 @@
-# Show-the-Local-Weather
+# Local-Weather
 Weather forecast
