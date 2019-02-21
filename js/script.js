@@ -13,9 +13,7 @@ $(document).ready(function() {
                 var weatherInfo = data.weather[0].description;
                 var humidity = data.main.humidity;
                 var windSpeed = data.wind.speed;
-
                 var weatherDescription = data.weather[0].main; // Used to determine background
-
                 var celsius = temperature.toFixed(0);
                 var fahrenheit = (celsius * 9 / 5 + 32).toFixed(0);
                 var i = 1; // Counter of even and odd number of clicks for changing between Celsius and Fahrenheit

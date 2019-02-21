@@ -1,37 +1,44 @@
+<!-- Website: freeCodeCamp -->
+<!-- Coding Interview Prep: Take Home Projects -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Local Weather</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- favicon.ico -->
-        <link href="https://image.ibb.co/icGEVA/android-chrome-192x192.png" rel="shortcut icon" />
+        <link href="https://image.ibb.co/icGEVA/android-chrome-192x192.png" rel="shortcut icon">
+        <!-- Bootstrap v3.3.7 -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- CSS and media queries -->
-        <link href="css/style.css" rel="stylesheet" />
-        <!-- Bootstrap CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body class="container-fluid">
         <!-- Local weather data -->
         <div class="row">
-            <div id="box" class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 text-center text-primary">
+            <div id="weather-box" class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 text-center text-primary">
                 <!-- Place and country -->
-                <p><span id="place"></span><span id="country"></span></p>
-                <!-- Weather icon, temperature and weather info -->
-                <img src="#" alt="" id="weatherIcon" /><span id="temperature"></span><sup title="" id="degrees"></sup><span id="weatherInfo"></span>
                 <p>
-                    <!-- Humidity -->
-                    <img src="#" alt="" class="icons" id="humidityIcon" title="Humidity" /><span id="humidity"></span>
-                    <!-- Wind speed -->
-                    <img src="#" alt="" class="icons" id="windSpeedIcon" title="Wind speed" /><span id="windSpeed"></span>
+                    <span id="place"></span>
+                    <span id="country"></span>
+                </p>
+
+                <!-- Weather icon, temperature and weather info -->
+                <img src="#" alt="" id="weatherIcon">
+                <span id="temperature"></span><sup title="" id="degrees"></sup>
+                <span id="weatherInfo"></span>
+
+                <!-- Humidity and wind speed -->
+                <p>
+                    <img src="#" alt="" class="icons" id="humidityIcon" title="Humidity"><span id="humidity"></span>
+                    <img src="#" alt="" class="icons" id="windSpeedIcon" title="Wind speed"><span id="windSpeed"></span>
                 </p>
             </div>
         </div>
 
-        <!-- jQuery -->
+        <!-- jQuery v3.3.1 -->
         <script src="js/jquery-3.3.1.min.js"></script>
-        <!-- Bootstrap JS -->
-        <script src="js/bootstrap.min.js"></script>
         <!-- JavaScript -->
         <script src="js/script.js"></script>
     </body>

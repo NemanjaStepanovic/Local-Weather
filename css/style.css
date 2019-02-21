@@ -5,10 +5,10 @@ body {
 }
 
 /* Weather data styles */
-#box {
+#weather-box {
     margin-top: 20vh;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     font-size: 3rem;
     cursor: default;
 }
@@ -23,27 +23,13 @@ body {
 
 
 /** Media queries **/
-/* Smartphone styles */
-@media only screen and (max-width: 576px) {
+@media (max-width: 666px) {
     /* Weather data styles */
-    #box {
+    #weather-box {
         font-size: 1.5rem;
     }
 
     .icons {
-        width: 3rem;
-    }
-}
-
-
-/* Tablet stlyes */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-    /* Weather data styles */
-    #box {
-        font-size: 2rem;
-    }
-
-    .icons {
-        width: 4rem;
+        width: 2.5rem;
     }
 }
